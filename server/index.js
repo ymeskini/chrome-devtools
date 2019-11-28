@@ -56,11 +56,6 @@ app.get("/exercises/audit", function(req, res) {
 app.get("/exercises/node", function(req, res) {
   let characters = "";
 
-  for (var i = 0; i < 100; i++) {
-    let foo = fs.readFileSync(__dirname + "/really_long_file.txt", {
-      encoding: "utf8"
-    });
-  }
   res.render("exercises/node");
 });
 
